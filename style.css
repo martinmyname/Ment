@@ -1,6 +1,6 @@
 .jumbotron {
-  background-image: url("/home/martin/Desktop/Ment/images/background.jpeg");
-  background-size: 100% 100%;
+  background-image: url("images/background.jpeg");
+  background-size: 100% 160%;
 }
 head{
     margin: 0;
@@ -14,7 +14,7 @@ head{
 }
 
 h2{
-	color: white;
+	color: white;;;;;rgba(192,192,192,0.3)
 }
 body{
 	background-color:rgba(192,192,192,0.3);
@@ -50,16 +50,19 @@ td {
 .d3 {
     text-align:left;
     width: 30%;
+    padding-left: 30px;
+    padding-bottom: 30px;
 }
 .column {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding-left: 2px;
 }
 .row::after {
   content: "";
   clear: both;
   display: table;
+  padding-left: 20px;
 }
  #str {
    width:auto;
@@ -71,4 +74,7 @@ td {
    color: #fff;
    font-weight: bold;
    background:  #80ced6;
+}
+h3{
+	color: green;
 }

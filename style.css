@@ -17,7 +17,7 @@ h2{
 	color: white;;;;;rgba(192,192,192,0.3)
 }
 body{
-	background-color:rgba(192,192,192,0.3);
+	 background-image: url(white.jpeg);
 }
 .search{
 	background-color: grey;
@@ -77,4 +77,7 @@ td {
 }
 h3{
 	color: green;
+}
+td.faded {
+    opacity: 0.2;
 }

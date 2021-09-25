@@ -17,5 +17,10 @@ h3{
 	color: red;
 }
 p{
-	text-shadow: ;
+  font-style: bold;
+  color: blue;
+}
+#add-info{
+  text-align: center;
+  background-image: url(good.png);
 }

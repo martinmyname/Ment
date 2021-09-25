@@ -11,7 +11,8 @@
   <script type="text/javascript" src="script.js"></script>
 
 
-	<head><title>Rentals Uganda</title>
+	<head><title>Rentals</title>
+	<main>
 	<div class="jumbotron">
 				<br> <br>
 		    <p >
@@ -19,37 +20,36 @@
 		  <div style='float: left;'>
 		  <p ><h2>Rent online,ment online with the cheapest houses in Uganda.</h2></p>
 		  </div>
-		  <div ><p class="lead" style='float:right; ;'>
+		  <!-- <div ><p class="lead" style='float:right; ;'>
 		    <a class="btn btn-primary btn-lg" href="signup.html" role="button">SIGN UP/LOG IN</a>
 		  </p>
-		  </div>
+		  </div> -->
 		  </div>
 	</div>
 </head>
 <body>
 
 <div class="search">
-	<nav class="navbar navbar-expand-lg navbar-light blue-grey lighten-5 mb-4">
-  <a class="navbar-brand" href="index.html">Ment</a>
+	<nav class="navbar navbar-expand-lg navbar-light blue-grey lighten-5 mb-4 " >
+  <a class="navbar-brand" href="index.html" id="name">Ment</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
       class="navbar-toggler-icon"></span></button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Popular locations</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><b>Add rental</b></a>
+        <a class="nav-link" href="addrenta.html"><b>Add rental</b></a>
       </li>
 
-      <!-- Dropdown -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">number of rooms</a>
+          aria-haspopup="true" aria-expanded="false">No of rooms</a>
         <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Self contained</a>
           <a class="dropdown-item" href="#">Double rooms</a>
@@ -58,18 +58,21 @@
       </li>
 
     </ul>
-    <form class="form-inline">
-      <input class="form-control" type="text" placeholder="Search area" aria-label="Search">
-      <button id="big" type="submit"><i class="fa fa-search">search</i></button>
-    </form>
+     <thead>
+        <tr>
+            <td colspan="2">
+                <label id="big" for="searchbox"><i class="fa fa-search">search</i></label>
+                <input  aria-label="Search" type="text" id="searchbox" class="form-control" placeholder="Search area" />
+            </td>
+        </tr>
+    </thead>
   </div>
   </div>
  <table>
-    
      <tr>
         <td class="d1">
         	<div id="str">
-            Offers;
+            Offers,
             water & electricity</div>
         </td>
         <td class="d2">
@@ -85,8 +88,12 @@
 			  </div>
 			</div>
         </td>
-        <td class="d3"><b>Makindye,kampala</b>
-        	<h3>Ush 300,000</h3><br>Rooms:3  bedroom;1 bathroom;1 reading room;1<br>Blocker fee:Ush 5000 
+        <td class="d3">
+        	<b>Makindye,kampala</b>
+        	<h3>Ush 300,000</h3>
+        	<br>Rooms:3  bedroom;1 bathroom;1 reading room;1<br>
+        	Blocker fee:Ush 5000 
+        	<span class="badge badge-info">0746802705</span>
         	<a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
         </td> 
     </tr>
@@ -111,7 +118,7 @@
         </td>
         <td class="d3"><b>kasangati,kampala</b>
         	<h3>Ush 550,000</h3><br>Rooms:5  bedroom;3 bathroom;2 reading room;1<br>Blocker fee:Ush 7000 
-        	<a class="btn btn-primary" href="https://www.google.com/maps/place/Kasangati/@0.4405592,32.6016524,19z/data=!4m5!3m4!1s0x177db167287059c7:0x71323958ecb57187!8m2!3d0.4409481!4d32.6023084?hl=en" role="button">See on map</a>
+        	<span class="badge badge-info">07046788505</span><a class="btn btn-primary" href="https://www.google.com/maps/place/Kasangati/@0.4405592,32.6016524,19z/data=!4m5!3m4!1s0x177db167287059c7:0x71323958ecb57187!8m2!3d0.4409481!4d32.6023084?hl=en" role="button">See on map</a>
         </td> 
     </tr>
          <tr>
@@ -135,7 +142,7 @@
         </td>
         <td class="d3"><b>Ntinda,kampala</b>
           <h3>Ush 400,000</h3><br>Rooms:3  bedroom;2 bathroom;1 reading room;1<br>Blocker fee:Ush 6000 
-          <a class="btn btn-primary" href="https://www.google.com/maps/place/Ntinda,+Kampala/@0.3503306,32.6123228,16z/data=!4m5!3m4!1s0x177dbbcdb14c104f:0x6054a5fcf58fabbf!8m2!3d0.350605!4d32.6157688?hl=en" role="button">See on map</a>
+          <span class="badge badge-info">070463546</span><a class="btn btn-primary" href="https://www.google.com/maps/place/Ntinda,+Kampala/@0.3503306,32.6123228,16z/data=!4m5!3m4!1s0x177dbbcdb14c104f:0x6054a5fcf58fabbf!8m2!3d0.350605!4d32.6157688?hl=en" role="button">See on map</a>
         </td> 
     </tr>
 
@@ -160,7 +167,7 @@
         </td>
         <td class="d3"><b>Gayaza,kampala</b>
           <h3>Ush 550,000</h3><br>Rooms:5  bedroom;3 bathroom;2 reading room;1<br>Blocker fee:Ush 6500 
-          <a class="btn btn-primary" href="https://www.google.com/maps/place/Gayaza/@0.451931,32.6073032,15.98z/data=!4m5!3m4!1s0x177db3ef41731c2d:0xf724f1d9aa11575b!8m2!3d0.4528368!4d32.6136146?hl=en" role="button">See on map</a>
+          <span class="badge badge-info">0735679054</span><a class="btn btn-primary" href="https://www.google.com/maps/place/Gayaza/@0.451931,32.6073032,15.98z/data=!4m5!3m4!1s0x177db3ef41731c2d:0xf724f1d9aa11575b!8m2!3d0.4528368!4d32.6136146?hl=en" role="button">See on map</a>
         </td> 
     </tr>
 
@@ -185,7 +192,7 @@
         </td>
         <td class="d3"><b>Munyonyo,kampala</b>
           <h3>Ush 650,000</h3><br>Rooms:5  bedroom;3 bathroom;2 reading room;1<br>Blocker fee:Ush 10000 
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
+          <span class="badge badge-info">0797855453</span><a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
         </td> 
     </tr>
      <tr>
@@ -208,8 +215,8 @@
       </div>
         </td>
         <td class="d3"><b>Ntinda,kampala</b>
-          <h3>Ush 1.500,000</h3><br>Rooms:10  bedroom;6 bathroom;4 reading room;1<br>Blocker fee:Ush 20000 
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
+          <h3>Ush 1,500,000</h3><br>Rooms:10  bedroom;6 bathroom;4 reading room;1<br>Blocker fee:Ush 20000 
+          <span class="badge badge-info">072223567</span><a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
         </td> 
     </tr>
 
@@ -222,19 +229,19 @@
         <td class="d2">
       <div class="row">
         <div class="column">
-          <img src="images/house*1.jpeg" alt="Snow" style="width:100%">
+          <img src="images/roland.jpg" alt="Snow" style="width:100%">
         </div>
         <div class="column">
-          <img src="images/house%1.jpeg" alt="Forest" style="width:100%">
+          <img src="images/roland1.jpg" alt="Forest" style="width:100%">
         </div>
         <div class="column">
-          <img src="images/house%2.jpeg" alt="Mountains" style="width:100%">
+          <img src="images/Houses-for-Rent-in-Kampala.jpg" alt="Mountains" style="width:100%">
         </div>
       </div>
         </td>
         <td class="d3"><b>Luwero,kampala</b>
           <h3>Ush 550,000</h3><br>Rooms:4  bedroom;3 bathroom;1 reading room;1<br>Blocker fee:Ush 6500 
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
+          <span class="badge badge-info">070658705</span><a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
         </td> 
     </tr>
      <tr>
@@ -258,7 +265,7 @@
         </td>
         <td class="d3"><b>Makindye,kampala</b>
           <h3>Ush 550,000</h3><br>Rooms:5  bedroom;3 bathroom;2 reading room;1<br>Blocker fee:Ush 7000 
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
+          <span class="badge badge-info">0704642705</span><a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
         </td> 
     </tr> 
     <tr>
@@ -282,7 +289,7 @@
         </td>
         <td class="d3"><b>Munyonyo,kampala</b>
           <h3>Ush 700,000</h3><br>Rooms:6  bedroom;3 bathroom;2 reading room;1<br>Blocker fee:Ush 15000 
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
+          <span class="badge badge-info">0706768865</span><a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
         </td> 
     </tr>
      <tr>
@@ -306,7 +313,7 @@
         </td>
         <td class="d3"><b>Luwero,kampala</b>
           <h3>Ush 550,000</h3><br>Rooms:5  bedroom;3 bathroom;2 reading room;1<br>Blocker fee:Ush 6500 
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
+          <span class="badge badge-info">0704667678</span><a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
         </td> 
     </tr>
      <tr>
@@ -330,7 +337,7 @@
         </td>
         <td class="d3"><b>Ntinda,kampala</b>
           <h3>Ush 850,000</h3><br>Rooms:5  bedroom;2 bathroom;2 reading room;1<br>Blocker fee:Ush 16500 
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
+          <span class="badge badge-info">0704478785</span><a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
         </td> 
     </tr>
      <tr>
@@ -354,26 +361,32 @@
         </td>
         <td class="d3"><b>Entebbe,kampala</b>
           <h3>Ush 1,550,000</h3><br>Rooms:7  bedroom;4 bathroom;2 reading room;1<br>Blocker fee:Ush 35000 
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
+          <span class="badge badge-info">0704664644</span><a class="btn btn-primary" href="https://www.google.com/maps/dir//Unnamed+Road,+Kampala/@0.2822916,32.5896299,15.77z/data=!4m8!4m7!1m0!1m5!1m1!1s0x177dbdb177f63713:0xd913b891014b4d70!2m2!1d32.5967556!2d0.2796375" role="button">See on map</a>
         </td> 
     </tr>
 
     
-</table>
-<footer> 
-	<b>About Us</b><br>
-	<p>Mission</p>
-	<p>
-		<ul> <li>To ensure affordability  and easy access to houses for our clients</li>
-		<li>To meet our client's various needs ie single rooms ,Apartments. </li>
-		<li>Ensure satisifaction and safety of our clients</li>
-		<li>Ease availabilty to all clients</li>
-		<li>capture and store details of our clinets</li> 
-		<li>Widen availability of houses available for rent</li>
-		</ul>
-		<p>Copyright &copy: 2019 Ment Uganda</p>
-	</p> 
+	</table>
+</main>
+ <hr>
+	<footer class="footer"> 
+		<b >About Us</b><br>
+    <hr>
+		<p class="bk">Mission</p>
+    <hr>
+		<p class="transbox">
+			<ul> <li>To ensure affordability  and easy access to houses for our clients</li>
+			<li>To meet our client's various needs ie single rooms ,Apartments. </li>
+			<li>Ensure satisifaction and safety of our clients</li>
+			<li>Ease availabilty to all clients</li>
+			<li>capture and store details of our clinets</li> 
+			<li>Widen availability of houses available for rent</li>
+			</ul>
+      <hr>
+			<p>Copyright &copy; 
+        <script> document.write(new Date().getFullYear());</script> All rights reserved by Ment</p>
+		</p> 
 	
-</footer>
+	</footer>
 </body>
 </html>
